@@ -2,6 +2,10 @@
 
 /* reset page */
 
+:root {
+  --primary-color:#047aed;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,16 +26,6 @@ a{
   text-decoration: none;
   color: #333;
 }
-
-.logo-letter{
-  background: #fff;
-  color: rgb(0, 89, 255);
-  border-radius: 50%;
-  font-weight: bold;
-  padding:1px 6px;
-  margin: 3px;
-}
-
 h1,h2 {
   font-weight: 300;
   line-height: 1.2;
@@ -47,7 +41,7 @@ img{
 }
 /* navbar */
 .navbar {
-  background-color: #047aed;
+  background-color: var(--primary-color);
   color: #fff;
   height: 70px;
 }
@@ -60,9 +54,7 @@ img{
   display: flex;
 }
 
-.navbar a:hover{
-  border-bottom: 2px #fff solid;
-}
+
 
 .navbar a {
   color: #FFf;
@@ -84,3 +76,96 @@ img{
   align-items: center;
   height: 100%;
 }
+
+ .navbar .post-job{
+  background: red;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+/* showcase */
+.showcase {
+  height: 400px;
+  background: var(--primary-color);
+  color: #FFF;
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+}
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  grid:30px;
+  overflow:visible;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card{
+  background-color: #Fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+  color: #333;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-form input{
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.showcase-form input:focus{
+  outline: none;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #Fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  transform: scale(0.98);
+}
+
+
+/* اضافه showcase */
+
