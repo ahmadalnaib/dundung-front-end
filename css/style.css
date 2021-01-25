@@ -264,3 +264,33 @@ font-size: 35px;
   font-weight: bold;
   color: var(--primary-color);
 }
+
+/* show jobs ssection */
+.bg-primary{
+  background: #f8f8f8;
+}
+
+.show-jobs h2 {
+  font-weight: bold;
+}
+
+.show-jobs-text{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+
+}
+
+.show-jobs-text a {
+  padding: 1rem;
+  color: #047aed;
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+}
+
+.container-jobs {
+  max-width: 1200px;
+  margin:0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
